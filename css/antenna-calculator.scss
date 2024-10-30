@@ -1,0 +1,72 @@
+/**
+ * This file is the SASS which contains the CSS for the whole plugin.
+ *
+ * @package K5HH's Antenna Calculator
+ * @since 1.1.0
+ */
+
+/* ************************ */
+// IMPORTS
+@import 'vars';
+
+#antennacalcform {
+  background-color: $col-background;
+  padding: 10px;
+
+  p {
+    padding:  0;
+    margin:   0;
+  }
+
+  input {
+    width:  auto;
+  }
+}
+
+#firstresultsbox, #firstresultsboxmetric {
+  width:              50%;
+  display:            none;
+  background-color:   $col-highlight;
+  color:              $col-highlighttext;
+  padding:            10px;
+  font-weight:        bold;
+  float:              right;
+}
+
+
+#mainfreq, #fulllength, #eachleg, #fulllength-b, #eachleg-b, #fulllengthm, #eachlegm, #fulllengthm-b, #eachlegm-b {
+  font-size:          28px;
+}
+#fulllengthplus, #eachlegplus {
+  font-size:        20px;
+}
+#inputs {
+  float:              left;
+  width:              50%;
+  padding:            10px;
+}
+
+#finalresultsbox, #finalresultsboxmetric {
+  clear:              left;
+  background-color:   $col-maincol;
+  color:              $col-maincoltext;
+  padding:            10px;
+  font-weight:        bold;
+  margin-top:         10px;
+}
+#subtext {
+  color:              $col-mainsubtext;
+
+  a {
+    color:            $col-maincoltext;
+    font-weight:      bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.disclaimer {
+  color:              $col-mainsubtext;
+  font-size:          10px;
+}
